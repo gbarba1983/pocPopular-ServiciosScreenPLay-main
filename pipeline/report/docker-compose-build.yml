@@ -1,0 +1,10 @@
+version: '3'
+services:
+  serenity_report:
+    container_name: serenity_report_webservices
+    image: "report_ws:$BUILD_NUMBER"
+    build:
+      context: .
+      dockerfile: Dockerfile-app
+    ports:
+      - "8889:80"
