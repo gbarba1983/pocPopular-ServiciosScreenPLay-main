@@ -1,6 +1,6 @@
 version: '3'
 services:
-  serenity_report:
+  serenity_report_webservices:
     container_name: serenity_report_webservices
     image: "report_ws:$BUILD_NUMBER"
     build:
