@@ -26,13 +26,9 @@ buildscript {
     }
     dependencies {
         classpath "net.serenity-bdd:serenity-gradle-plugin:2.4.24"
-        classpath "net.serenity-bdd:serenity-single-page-report:2.1.4"
     }
 }
 
-serenity {
-    reports = ["single-page-html"]
-}
 
 dependencies {
 
@@ -53,5 +49,5 @@ dependencies {
 
 
 }
-
+gradle.startParameter.continueOnFailure = true
 
